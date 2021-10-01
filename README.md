@@ -13,9 +13,9 @@ app.use(express.static(".well-known/acme-challenge/"));
 
 ```
 ## Step 3. Replace <*domain*> with your ip address or domain for your website in the ```data/nginx/app.conf``` file
-![init_file](/domain_1.png)
-![init_file](/domain_2.png)
-![init_file](/domain_3.png)
+![init_file](images/domain_1.png)
+![init_file](images/domain_2.png)
+![init_file](images/domain_3.png)
 
 ## Step 4. Run the following command  
 ```
@@ -27,7 +27,7 @@ chmod +x init-letsencrypt.sh
 ```
 * this command will download a file that will produce the certificate.
 * Make sure to review the file so that you can stage your attempts before hitting a rate limit and that it hits the proper domain/ip
-![init_file](/init_file_1.png)
+![init_file](images/init_file_1.png)
 
 ## Step 5 Run the following command 
 ```
@@ -35,4 +35,4 @@ sudo ./init-letsencrypt.sh
 ```
 * You should see *Succesfully received certificate* in the console. Once you see that message change the staging value in the init-letsencrypt.sh file back to 0 and repeat this step again. 
 
-![post_staging](post_staging.png)
+![post_staging](images/post_staging.png)
